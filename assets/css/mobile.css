@@ -16,6 +16,11 @@
 }
 
 body {
+  background: url("/images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 0;
+  background-position-y: 0;
   background-color: var(--Pale-blue);
   display: flex;
   height: 100vh;
