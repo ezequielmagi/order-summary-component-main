@@ -1,0 +1,151 @@
+:root {
+  /* primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  /* Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: var(--Pale-blue);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.mobile-background {
+  height: 250px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.card-container {
+  background-color: #fafafa;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  height: 85%;
+  width: 90%;
+}
+
+.card-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-text {
+  margin: 0 10%;
+  text-align: center;
+}
+
+.card-text__title {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.card-text__msg {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.plan-description {
+  align-items: center;
+  background-color: var(--Very-pale-blue);
+  border-radius: 15px;
+  display: flex;
+  height: 10%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 75vw;
+}
+
+.plan-description__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.plan-description img {
+  align-content: center;
+  padding: 5px;
+  width: 65px;
+}
+
+.plan-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plan-option p:first-child {
+  color: var(--Dark-blue);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.plan-option :nth-child(2) {
+  color: var(--Desaturated-blue);
+}
+
+.plan-change {
+  margin-left: 15px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.plan-change a {
+  font-weight: bold;
+  color: var(--Bright-blue);
+  font-size: 0.9rem;
+}
+
+.card-buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  width: 100%;
+}
+
+#btn-proceed {
+  border: none;
+  border-radius: 10px;
+  color: var(--Very-pale-blue);
+  background-color: var(--Bright-blue);
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 7vh;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 80vw;
+}
+
+.card-buttons a {
+  color: var(--Desaturated-blue);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-decoration: none;
+}

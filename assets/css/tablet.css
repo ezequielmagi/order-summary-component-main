@@ -9,23 +9,25 @@
 }
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
 }
 
 body {
-  /* background-color: var(--Pale-blue); */
+  background-color: var(--Pale-blue);
   display: flex;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .mobile-background {
   height: 250px;
-  width: 375px;
-  position: absolute;
+  width: 768px;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 
@@ -55,7 +57,7 @@ body {
 }
 
 .card-text__title {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   font-weight: 900;
   margin-bottom: 15px;
 }
@@ -63,7 +65,7 @@ body {
 .card-text__msg {
   color: var(--Desaturated-blue);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 1.5;
 }
 
@@ -82,7 +84,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 50%;
 }
 
 .plan-description img {
@@ -94,6 +96,7 @@ body {
 .plan-option {
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
   justify-content: space-between;
 }
 
@@ -116,7 +119,7 @@ body {
 .plan-change a {
   font-weight: bold;
   color: var(--Bright-blue);
-  font-size: 0.9rem;
+  font-size: 1.3rem;
 }
 
 .card-buttons {
@@ -134,7 +137,7 @@ body {
   border-radius: 10px;
   color: var(--Very-pale-blue);
   background-color: var(--Bright-blue);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   height: 7vh;
   margin-bottom: 15px;
